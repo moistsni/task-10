@@ -1,0 +1,126 @@
+/* Header */
+.header-element{
+    padding: 38px 0;
+    height: 96px;
+}
+.wraper1{
+    max-width: 1376px;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.nav-ul{
+    display: flex;
+    width: 328px;
+    justify-content: space-between;
+}
+.button1{
+    width: 100px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button2{
+    display: none;
+}
+
+/* Section1 */
+.wraper2{
+    max-width: 1110px;
+    width: 90%;
+    margin: 0 auto;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: space-between;
+}
+.section1-h3{
+    font-size: 56px;
+    line-height: 60px;
+    width: 490px;
+}
+.section1-p1{
+    width: 490px;
+    font-size: 18px;
+    margin-top: 24px;
+    height: 56px;
+    line-height: 28px;
+}
+.left-block{
+    width: 490px;
+    /* margin-top: 134px;
+    margin-left: 165px; */
+}
+.right-block{
+    /* margin-top: 64px; */
+}
+.button3{
+    width: 100px;
+    height: 48px;
+    background-color: black;
+    color: white;
+    border-radius: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section1-p2{
+    width: 236px;
+    font-size: 14px;
+    margin-left: 40px;
+}
+.small-block{
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+}
+.image-right{
+    width: 100%;
+}
+/* Responsive */
+@media(max-width:1024px){
+    .wraper2{
+        flex-direction: column;
+    }
+    .left-block{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .right-block{
+        width: 100%;
+    }
+    .section1-p2{
+        width: 100%;
+    }
+    .section1-h3{
+        text-align: center;
+    }
+    .section1-p1{
+      text-align: center;
+    }
+}
+@media (max-width: 744px){
+    .small-block{
+        flex-direction: column;
+    }
+
+}
+@media(max-width: 480px){
+    .nav-ul{
+        display: none;
+    }
+    .button1{
+        display: none;
+    }
+    .button2{
+        display: flex;
+    }
+}
