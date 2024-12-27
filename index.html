@@ -41,7 +41,21 @@
             </div>
           </div>
           <div class="right-block">
-            <img class="image-right" src="images/image-desktop.png" alt="" />
+            <picture>
+              <source
+                media="(min-width:1024px)"
+                srcset="images/image-desktop.png"
+              />
+              <source
+                media="(min-width:744px)"
+                srcset="images/image-tablet-large.png"
+              />
+              <source
+                media="(min-width:375px)"
+                srcset="images/image-tablet-small.png"
+              />
+              <img class="image-right" src="images/image-small" alt="" />
+            </picture>
           </div>
         </div>
       </section>
